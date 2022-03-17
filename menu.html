@@ -9,7 +9,16 @@
         <link rel="stylesheet" href="imagen.png">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     </head>
-
+    <body>
+        
+        <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="logo.png" alt="Air core" class="logo">
+        </a>
         <ul>
             <li><a class="active" href="#">Inicios</a></li>
             <li><a href="#">Productos</a></li>
@@ -19,4 +28,64 @@
         </ul>
         </nav>
     </body>
-</html>    
+</html>
+
+
+html{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box; 
+}
+
+nav{
+    background: #ff0000;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 20px;
+}
+.logo¨{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5 px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #0026ff;
+    transition: .1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
